@@ -41,8 +41,8 @@
     // Set the fill color
 	[[UIColor colorWithWhite:0 alpha:0.8] setFill];
 
-    // Create the path for the rounded rectanble
-    CGRect roundedRect = CGRectMake(self.bounds.origin.x, self.bounds.origin.y, self.bounds.size.width, self.bounds.size.height * 0.8);
+    // Create the path for the rounded rectangle
+    CGRect roundedRect = CGRectMake(self.bounds.origin.x, self.bounds.origin.y, self.bounds.size.width, floorf(self.bounds.size.height * 0.8));
     UIBezierPath *roundedRectPath = [UIBezierPath bezierPathWithRoundedRect:roundedRect cornerRadius:6.0];
     
     // Create the arrow path
@@ -54,7 +54,7 @@
     [arrowPath addLineToPoint:CGPointMake((midX + 10.0), CGRectGetMaxY(roundedRect))];
     [arrowPath closePath];
     
-    // Attach the arrow path to the buble
+    // Attach the arrow path to the rounded rect
     [roundedRectPath appendPath:arrowPath];
 
     [roundedRectPath fill];
@@ -109,7 +109,7 @@
 
 - (void)_positionAndUpdatePopupView {
     CGRect _thumbRect = self.thumbRect;
-    CGRect popupRect = CGRectOffset(_thumbRect, 0, -(_thumbRect.size.height * 1.5));
+    CGRect popupRect = CGRectOffset(_thumbRect, 0, -floorf(_thumbRect.size.height * 1.5));
     valuePopupView.frame = CGRectInset(popupRect, -20, -10);
     valuePopupView.value = (NSInteger)self.value;
 }
@@ -143,7 +143,7 @@
     // Fade in and update the popup view
     CGPoint touchPoint = [touch locationInView:self];
     // Check if the knob is touched. Only in this case show the popup-view
-    if(CGRectContainsPoint(self.thumbRect, touchPoint)) {
+    if(CGRectContainsPoint(CGRectInset(self.thumbRect, -12.0, -12.0), touchPoint)) {
         [self _positionAndUpdatePopupView];
         [self _fadePopupViewInAndOut:YES]; 
     }
