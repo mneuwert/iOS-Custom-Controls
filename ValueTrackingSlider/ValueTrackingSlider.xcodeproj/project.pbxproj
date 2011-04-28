@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C99CD6D13687665006D81AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C99CD6C13687665006D81AD /* UIKit.framework */; };
+		4C99CD6F13687665006D81AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C99CD6E13687665006D81AD /* Foundation.framework */; };
+		4C99CD7113687665006D81AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C99CD7013687665006D81AD /* CoreGraphics.framework */; };
+		4C99CD7713687665006D81AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C99CD7513687665006D81AD /* InfoPlist.strings */; };
+		4C99CD7A13687665006D81AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C99CD7913687665006D81AD /* main.m */; };
+		4C99CD7D13687665006D81AD /* ValueTrackingSliderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C99CD7C13687665006D81AD /* ValueTrackingSliderAppDelegate.m */; };
+		4C99CD8013687665006D81AD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C99CD7E13687665006D81AD /* MainWindow.xib */; };
+		4C99CD8313687665006D81AD /* ValueTrackingSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C99CD8213687665006D81AD /* ValueTrackingSliderViewController.m */; };
+		4C99CD8E1368769D006D81AD /* MNEValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C99CD8D1368769D006D81AD /* MNEValueTrackingSlider.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C99CD6813687665006D81AD /* ValueTrackingSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValueTrackingSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C99CD6C13687665006D81AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4C99CD6E13687665006D81AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4C99CD7013687665006D81AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4C99CD7413687665006D81AD /* ValueTrackingSlider-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ValueTrackingSlider-Info.plist"; sourceTree = "<group>"; };
+		4C99CD7613687665006D81AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C99CD7813687665006D81AD /* ValueTrackingSlider-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ValueTrackingSlider-Prefix.pch"; sourceTree = "<group>"; };
+		4C99CD7913687665006D81AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C99CD7B13687665006D81AD /* ValueTrackingSliderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValueTrackingSliderAppDelegate.h; sourceTree = "<group>"; };
+		4C99CD7C13687665006D81AD /* ValueTrackingSliderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValueTrackingSliderAppDelegate.m; sourceTree = "<group>"; };
+		4C99CD7F13687665006D81AD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		4C99CD8113687665006D81AD /* ValueTrackingSliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValueTrackingSliderViewController.h; sourceTree = "<group>"; };
+		4C99CD8213687665006D81AD /* ValueTrackingSliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValueTrackingSliderViewController.m; sourceTree = "<group>"; };
+		4C99CD8C1368769D006D81AD /* MNEValueTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNEValueTrackingSlider.h; sourceTree = "<group>"; };
+		4C99CD8D1368769D006D81AD /* MNEValueTrackingSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNEValueTrackingSlider.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C99CD6513687665006D81AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C99CD6D13687665006D81AD /* UIKit.framework in Frameworks */,
+				4C99CD6F13687665006D81AD /* Foundation.framework in Frameworks */,
+				4C99CD7113687665006D81AD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C99CD5D13687664006D81AD = {
+			isa = PBXGroup;
+			children = (
+				4C99CD7213687665006D81AD /* ValueTrackingSlider */,
+				4C99CD6B13687665006D81AD /* Frameworks */,
+				4C99CD6913687665006D81AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C99CD6913687665006D81AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C99CD6813687665006D81AD /* ValueTrackingSlider.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C99CD6B13687665006D81AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C99CD6C13687665006D81AD /* UIKit.framework */,
+				4C99CD6E13687665006D81AD /* Foundation.framework */,
+				4C99CD7013687665006D81AD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C99CD7213687665006D81AD /* ValueTrackingSlider */ = {
+			isa = PBXGroup;
+			children = (
+				4C99CD8C1368769D006D81AD /* MNEValueTrackingSlider.h */,
+				4C99CD8D1368769D006D81AD /* MNEValueTrackingSlider.m */,
+				4C99CD7B13687665006D81AD /* ValueTrackingSliderAppDelegate.h */,
+				4C99CD7C13687665006D81AD /* ValueTrackingSliderAppDelegate.m */,
+				4C99CD7E13687665006D81AD /* MainWindow.xib */,
+				4C99CD8113687665006D81AD /* ValueTrackingSliderViewController.h */,
+				4C99CD8213687665006D81AD /* ValueTrackingSliderViewController.m */,
+				4C99CD7313687665006D81AD /* Supporting Files */,
+			);
+			path = ValueTrackingSlider;
+			sourceTree = "<group>";
+		};
+		4C99CD7313687665006D81AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C99CD7413687665006D81AD /* ValueTrackingSlider-Info.plist */,
+				4C99CD7513687665006D81AD /* InfoPlist.strings */,
+				4C99CD7813687665006D81AD /* ValueTrackingSlider-Prefix.pch */,
+				4C99CD7913687665006D81AD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C99CD6713687665006D81AD /* ValueTrackingSlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C99CD8913687665006D81AD /* Build configuration list for PBXNativeTarget "ValueTrackingSlider" */;
+			buildPhases = (
+				4C99CD6413687665006D81AD /* Sources */,
+				4C99CD6513687665006D81AD /* Frameworks */,
+				4C99CD6613687665006D81AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ValueTrackingSlider;
+			productName = ValueTrackingSlider;
+			productReference = 4C99CD6813687665006D81AD /* ValueTrackingSlider.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C99CD5F13687664006D81AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Neuwert-Media.com";
+			};
+			buildConfigurationList = 4C99CD6213687664006D81AD /* Build configuration list for PBXProject "ValueTrackingSlider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4C99CD5D13687664006D81AD;
+			productRefGroup = 4C99CD6913687665006D81AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C99CD6713687665006D81AD /* ValueTrackingSlider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C99CD6613687665006D81AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C99CD7713687665006D81AD /* InfoPlist.strings in Resources */,
+				4C99CD8013687665006D81AD /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C99CD6413687665006D81AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C99CD7A13687665006D81AD /* main.m in Sources */,
+				4C99CD7D13687665006D81AD /* ValueTrackingSliderAppDelegate.m in Sources */,
+				4C99CD8313687665006D81AD /* ValueTrackingSliderViewController.m in Sources */,
+				4C99CD8E1368769D006D81AD /* MNEValueTrackingSlider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C99CD7513687665006D81AD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C99CD7613687665006D81AD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4C99CD7E13687665006D81AD /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C99CD7F13687665006D81AD /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C99CD8713687665006D81AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4C99CD8813687665006D81AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		4C99CD8A13687665006D81AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ValueTrackingSlider/ValueTrackingSlider-Prefix.pch";
+				INFOPLIST_FILE = "ValueTrackingSlider/ValueTrackingSlider-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4C99CD8B13687665006D81AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ValueTrackingSlider/ValueTrackingSlider-Prefix.pch";
+				INFOPLIST_FILE = "ValueTrackingSlider/ValueTrackingSlider-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C99CD6213687664006D81AD /* Build configuration list for PBXProject "ValueTrackingSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C99CD8713687665006D81AD /* Debug */,
+				4C99CD8813687665006D81AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C99CD8913687665006D81AD /* Build configuration list for PBXNativeTarget "ValueTrackingSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C99CD8A13687665006D81AD /* Debug */,
+				4C99CD8B13687665006D81AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C99CD5F13687664006D81AD /* Project object */;
+}
