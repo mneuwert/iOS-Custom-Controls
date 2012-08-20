@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42D8EFD715E267F400430782 /* MNEValuePopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D8EFD615E267F400430782 /* MNEValuePopupView.m */; };
 		4C99CD6D13687665006D81AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C99CD6C13687665006D81AD /* UIKit.framework */; };
 		4C99CD6F13687665006D81AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C99CD6E13687665006D81AD /* Foundation.framework */; };
 		4C99CD7113687665006D81AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C99CD7013687665006D81AD /* CoreGraphics.framework */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42D8EFD515E267F400430782 /* MNEValuePopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNEValuePopupView.h; sourceTree = "<group>"; };
+		42D8EFD615E267F400430782 /* MNEValuePopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNEValuePopupView.m; sourceTree = "<group>"; };
 		4C99CD6813687665006D81AD /* ValueTrackingSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValueTrackingSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C99CD6C13687665006D81AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4C99CD6E13687665006D81AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,6 +83,8 @@
 		4C99CD7213687665006D81AD /* ValueTrackingSlider */ = {
 			isa = PBXGroup;
 			children = (
+				42D8EFD515E267F400430782 /* MNEValuePopupView.h */,
+				42D8EFD615E267F400430782 /* MNEValuePopupView.m */,
 				4C99CD8C1368769D006D81AD /* MNEValueTrackingSlider.h */,
 				4C99CD8D1368769D006D81AD /* MNEValueTrackingSlider.m */,
 				4C99CD7B13687665006D81AD /* ValueTrackingSliderAppDelegate.h */,
@@ -169,6 +174,7 @@
 				4C99CD7D13687665006D81AD /* ValueTrackingSliderAppDelegate.m in Sources */,
 				4C99CD8313687665006D81AD /* ValueTrackingSliderViewController.m in Sources */,
 				4C99CD8E1368769D006D81AD /* MNEValueTrackingSlider.m in Sources */,
+				42D8EFD715E267F400430782 /* MNEValuePopupView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +279,7 @@
 				4C99CD8B13687665006D81AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
