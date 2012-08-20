@@ -11,9 +11,10 @@
 @class MNESliderValuePopupView;
 
 @interface MNEValueTrackingSlider : UISlider {
-    MNESliderValuePopupView *valuePopupView; 
+    
 }
 
-@property (nonatomic, readonly) CGRect thumbRect;
+@property (readonly) CGRect thumbRect;
+@property (strong) MNESliderValuePopupView *valuePopupView;
 
 @end
